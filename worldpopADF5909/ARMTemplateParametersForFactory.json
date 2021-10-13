@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "worldpopADF5909"
+		},
+		"AzureBlobStorage_WorldPop_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"trigger1_properties_AMBlobtoSQL_parameters_blobfile": {
+			"value": "@triggerBody().filename"
+		},
+		"trigger1_properties_AMBlobtoSQL_parameters_sqltable": {
+			"value": "Cars"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/506a4cb9-cf60-489a-963d-d80cce0f8444/resourceGroups/Training/providers/Microsoft.Storage/storageAccounts/myblobsa"
+		}
+	}
+}

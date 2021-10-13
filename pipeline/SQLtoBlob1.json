@@ -1,9 +1,9 @@
 {
-	"name": "SQLtoBlob",
+	"name": "SQLtoBlob1",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {

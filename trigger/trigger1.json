@@ -1,0 +1,28 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "AMBlobtoSQL",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"blobfile": "@triggerBody().filename",
+					"sqltable": "Cars"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/images/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/506a4cb9-cf60-489a-963d-d80cce0f8444/resourceGroups/Training/providers/Microsoft.Storage/storageAccounts/myblobsa",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

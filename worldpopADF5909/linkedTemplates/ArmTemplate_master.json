@@ -15,18 +15,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
 		},
-		"trigger1_properties_AMBlobtoSQL_parameters_blobfile": {
-			"type": "string",
-			"defaultValue": "@triggerBody().filename"
-		},
-		"trigger1_properties_AMBlobtoSQL_parameters_sqltable": {
-			"type": "string",
-			"defaultValue": "Cars"
-		},
-		"trigger1_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/506a4cb9-cf60-489a-963d-d80cce0f8444/resourceGroups/Training/providers/Microsoft.Storage/storageAccounts/myblobsa"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -59,15 +47,6 @@
 					},
 					"AzureSqlDatabase1_connectionString": {
 						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
-					},
-					"trigger1_properties_AMBlobtoSQL_parameters_blobfile": {
-						"value": "[parameters('trigger1_properties_AMBlobtoSQL_parameters_blobfile')]"
-					},
-					"trigger1_properties_AMBlobtoSQL_parameters_sqltable": {
-						"value": "[parameters('trigger1_properties_AMBlobtoSQL_parameters_sqltable')]"
-					},
-					"trigger1_properties_typeProperties_scope": {
-						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},

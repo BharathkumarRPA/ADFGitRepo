@@ -3,18 +3,7 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "AMBlobtoSQL",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"blobfile": "@triggerBody().filename",
-					"sqltable": "Cars"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/images/blobs/",

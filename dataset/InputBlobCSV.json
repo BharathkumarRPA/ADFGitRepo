@@ -1,5 +1,5 @@
 {
-	"name": "BlobCSV",
+	"name": "InputBlobCSV",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzuremyBlobSA",

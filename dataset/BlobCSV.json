@@ -2,7 +2,7 @@
 	"name": "BlobCSV",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage_WorldPop",
+			"referenceName": "AzuremyBlobSA",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Cars",
-				"container": "output"
+				"fileName": "Movies.csv",
+				"container": "input"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

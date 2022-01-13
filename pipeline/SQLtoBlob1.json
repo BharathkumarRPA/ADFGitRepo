@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "CopySQLtoBlob",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -107,7 +107,7 @@
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2021-10-13T14:49:44Z"
+		"lastPublishTime": "2021-10-21T10:26:35Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

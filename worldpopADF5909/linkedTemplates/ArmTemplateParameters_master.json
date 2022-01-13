@@ -5,11 +5,26 @@
 		"factoryName": {
 			"value": "worldpopADF5909"
 		},
+		"ADLS1_accessToken": {
+			"value": ""
+		},
 		"AzureBlobStorage_WorldPop_connectionString": {
 			"value": ""
 		},
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
+		},
+		"AzuremyBlobSA_connectionString": {
+			"value": ""
+		},
+		"trigger1_properties_AMBlobtoSQL_parameters_blobfile": {
+			"value": "@triggerBody().filename"
+		},
+		"trigger1_properties_AMBlobtoSQL_parameters_sqltable": {
+			"value": "Cars"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/506a4cb9-cf60-489a-963d-d80cce0f8444/resourceGroups/Training/providers/Microsoft.Storage/storageAccounts/myblobsa"
 		},
 		"containerUri": {
 			"value": ""

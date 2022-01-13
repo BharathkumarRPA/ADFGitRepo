@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "worldpopADF5909"
 		},
+		"ADLS1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'ADLS1'"
+		},
 		"AzureBlobStorage_WorldPop_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage_WorldPop'"
@@ -14,6 +18,22 @@
 		"AzureSqlDatabase1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
+		"AzuremyBlobSA_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzuremyBlobSA'"
+		},
+		"trigger1_properties_AMBlobtoSQL_parameters_blobfile": {
+			"type": "string",
+			"defaultValue": "@triggerBody().filename"
+		},
+		"trigger1_properties_AMBlobtoSQL_parameters_sqltable": {
+			"type": "string",
+			"defaultValue": "Cars"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/506a4cb9-cf60-489a-963d-d80cce0f8444/resourceGroups/Training/providers/Microsoft.Storage/storageAccounts/myblobsa"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +62,26 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ADLS1_accessToken": {
+						"value": "[parameters('ADLS1_accessToken')]"
+					},
 					"AzureBlobStorage_WorldPop_connectionString": {
 						"value": "[parameters('AzureBlobStorage_WorldPop_connectionString')]"
 					},
 					"AzureSqlDatabase1_connectionString": {
 						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"AzuremyBlobSA_connectionString": {
+						"value": "[parameters('AzuremyBlobSA_connectionString')]"
+					},
+					"trigger1_properties_AMBlobtoSQL_parameters_blobfile": {
+						"value": "[parameters('trigger1_properties_AMBlobtoSQL_parameters_blobfile')]"
+					},
+					"trigger1_properties_AMBlobtoSQL_parameters_sqltable": {
+						"value": "[parameters('trigger1_properties_AMBlobtoSQL_parameters_sqltable')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},

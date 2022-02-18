@@ -6,11 +6,7 @@
 		"type": "AzureBlobStorage",
 		"typeProperties": {
 			"connectionString": "DefaultEndpointsProtocol=https;AccountName=myblobsa;EndpointSuffix=core.windows.net;",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI3ZDZmOTRlOC03YzE1LTRjYWUtODAzYy02MDJiYjU0M2QwMWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
-		},
-		"connectVia": {
-			"referenceName": "dev-ir-adf",
-			"type": "IntegrationRuntimeReference"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEU5MDUwQTBELTk1OTEtNDUwNi1BQ0RGLTlDRkZCREM0NDgyQ19hNjM2NTJkMi02MjBiLTRmNzktOGUxNC1lMWU1Y2JiMjk5YjQiDQp9"
 		}
 	}
 }
